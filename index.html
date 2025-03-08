@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục ảnh tự do</title>
+    <title>Gallery Tự Do</title>
     <style>
         * {
             margin: 0;
@@ -11,53 +11,59 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
             overflow: hidden;
             position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .container {
-            position: relative;
+        .gallery {
+            position: absolute;
             width: 100%;
             height: 100%;
         }
-        .image {
+        .gallery img {
             position: absolute;
-            width: 200px;
-            height: 120px;
+            width: 200px; /* Điều chỉnh kích thước */
+            height: 130px;
+            border-radius: 20px; /* Bo tròn góc */
             object-fit: cover;
-            border-radius: 20px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease;
         }
-        .image:hover {
-            transform: scale(1.1);
-        }
+        /* Vị trí ngẫu nhiên cho ảnh */
+        .img1 { top: 10%; left: 5%; transform: rotate(-10deg); }
+        .img2 { top: 50%; left: 15%; transform: rotate(5deg); }
+        .img3 { top: 30%; right: 10%; transform: rotate(-5deg); }
+        .img4 { bottom: 10%; left: 40%; transform: rotate(8deg); }
+        .img5 { bottom: 20%; right: 5%; transform: rotate(-12deg); }
+
+        /* Văn bản chính */
         .text {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
             text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            z-index: 10;
             background: rgba(0, 0, 0, 0.5);
-            padding: 15px 20px;
+            padding: 10px 20px;
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="image1.jpg" class="image" style="top: 10%; left: 10%;">
-        <img src="image2.jpg" class="image" style="top: 20%; left: 50%;">
-        <img src="image3.jpg" class="image" style="top: 50%; left: 80%;">
-        <img src="image4.jpg" class="image" style="top: 70%; left: 20%;">
-        <img src="image5.jpg" class="image" style="top: 80%; left: 60%;">
-        <div class="text">Chúc mừng 8/3 🎉</div>
+    <div class="gallery">
+        <img src="image1.jpg" class="img1">
+        <img src="image2.jpg" class="img2">
+        <img src="image3.jpg" class="img3">
+        <img src="image4.jpg" class="img4">
+        <img src="image5.jpg" class="img5">
+    </div>
+    <div class="text">
+        Chúc Đặng Kim Ngân 8/3 luôn xinh tươi, công việc thuận lợi, ví lúc nào cũng đầy tiền!
     </div>
 </body>
 </html>
