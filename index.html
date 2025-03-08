@@ -1,112 +1,80 @@
 <!DOCTYPE html>
 <html lang="vi" class="no-js">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Chúc mừng 8/3</title>
-		<link rel="shortcut icon" href="./rose.png">
-		<!-- Font hỗ trợ tiếng Việt tốt -->
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script>
-			document.documentElement.className = "js";
-			var supportsCssVars = function supportsCssVars() {
-				var e,
-					t = document.createElement("style");
-				return (
-					(t.innerHTML = "root: { --tmp-var: bold; }"),
-					document.head.appendChild(t),
-					(e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"))),
-					t.parentNode.removeChild(t),
-					e
-				);
-			};
-			supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-		</script>
-		<style>
-			body {
-				font-family: 'Noto Sans', sans-serif; /* Font hỗ trợ tiếng Việt chuẩn */
-				margin: 0;
-				padding: 0;
-				background-color: #f9f9f9;
-				text-align: center;
-			}
-
-			.content__title {
-				margin-bottom: 15px;
-				font-size: 36px; /* Tăng nhẹ kích thước */
-				font-weight: bold;
-			}
-
-			.content__title-sub {
-				line-height: 1.4; /* Giãn dòng hợp lý */
-				margin-top: 20px;
-				font-size: 28px; /* Tăng kích thước chữ */
-				font-weight: bold;
-				max-width: 80%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			/* Căn chỉnh lại vị trí ảnh */
-			.grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ảnh sẽ tự động căn chỉnh theo màn hình */
-				gap: 15px;
-				justify-content: center;
-				margin: 30px auto;
-				padding: 0 10px;
-				max-width: 800px;
-			}
-
-			.grid__item {
-				width: 100%;
-				height: 180px;
-				background-size: cover;
-				background-position: center;
-				border-radius: 12px;
-			}
-
-			@media (max-width: 600px) {
-				.content__title {
-					font-size: 28px;
-				}
-				.content__title-sub {
-					font-size: 24px;
-				}
-				.grid {
-					grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-				}
-				.grid__item {
-					height: 150px;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<h2 class="content__title">International Women's Day</h2>
-
-			<p class="content__title-sub">
-				Chúc Đặng Kim Ngân 8/3 luôn xinh tươi, <br>
-				công việc thuận lợi và quan trọng nhất là <br>
-				thấy dạo này có vẻ thích tiền nên chúc <br>
-				ví lúc nào cũng đầy tiền, vàng đầy két, <br>
-				thẻ nhiều money nhé.
-			</p>
-
-			<div class="grid">
-				<div class="grid__item" style="background-image:url(./img/img1.png);"></div>
-				<div class="grid__item" style="background-image:url(./img/img2.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img3.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img4.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img5.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img6.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img7.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img8.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img9.jpg);"></div>
-				<div class="grid__item" style="background-image:url(./img/img10.png);"></div>
-			</div>
-		</main>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chúc mừng 8/3</title>
+    <link rel="shortcut icon" href="./rose.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function supportsCssVars() {
+            var e,
+                t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), 
+                   e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), 
+                   t.parentNode.removeChild(t), e;
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #caa472;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .grid__item {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+        .content__title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .content__title-sub {
+            font-size: 20px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid">
+            <div class="grid__item" style="background-image:url(./img/img1.png);"></div>
+            <div class="grid__item" style="background-image:url(./img/img3.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img4.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img2.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img5.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img6.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img7.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img8.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img9.jpg);"></div>
+        </div>
+        <h2 class="content__title">International Women's Day</h2>
+        <h2 class="content__title-sub">
+            Chúc Đặng Kim Ngân 8/3 luôn xinh tươi,<br>
+            công việc thuận lợi và quan trọng nhất là<br>
+            thấy dạo này có vẻ thích tiền nên chúc<br>
+            ví lúc nào cũng đầy tiền, vàng đầy két,<br>
+            thẻ nhiều money nhé.
+        </h2>
+    </main>
+</body>
 </html>
