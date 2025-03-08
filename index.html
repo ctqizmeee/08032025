@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8/3 Greetings</title>
+    <title>Bố cục ảnh tự do</title>
     <style>
         * {
             margin: 0;
@@ -20,46 +20,44 @@
             position: relative;
         }
         .container {
-            width: 90vw;
-            height: 90vh;
-            display: flex;
-            flex-wrap: wrap;
             position: relative;
+            width: 100%;
+            height: 100%;
         }
-        .grid__item {
-            width: 30%;
-            height: 30%;
-            margin: 1%;
-            border-radius: 20px;
-            background-size: cover;
-            background-position: center;
+        .image {
             position: absolute;
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
         }
-        .text-overlay {
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #ff8c00;
-            font-size: 1.5rem;
+            color: white;
+            font-size: 24px;
             font-weight: bold;
             text-align: center;
-            text-shadow: 2px 2px 10px black;
-            z-index: 10;
-            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="text-overlay">
-            Chúc Đặng Kim Ngân 8/3 luôn xinh tươi, công việc thuận lợi và quan trọng nhất là ví lúc nào cũng đầy tiền, vàng đầy két, thẻ nhiều money nhé.
-        </div>
-        <div class="grid__item" style="background-image: url('./img/img1.png'); top: 5%; left: 10%;"></div>
-        <div class="grid__item" style="background-image: url('./img/img2.jpg'); top: 50%; left: 20%;"></div>
-        <div class="grid__item" style="background-image: url('./img/img3.jpg'); top: 30%; left: 60%;"></div>
-        <div class="grid__item" style="background-image: url('./img/img4.jpg'); top: 70%; left: 70%;"></div>
-        <div class="grid__item" style="background-image: url('./img/img5.jpg'); top: 10%; left: 80%;"></div>
+        <img src="image1.jpg" class="image" style="top: 10%; left: 10%;">
+        <img src="image2.jpg" class="image" style="top: 20%; left: 50%;">
+        <img src="image3.jpg" class="image" style="top: 50%; left: 80%;">
+        <img src="image4.jpg" class="image" style="top: 70%; left: 20%;">
+        <img src="image5.jpg" class="image" style="top: 80%; left: 60%;">
+        <div class="text">Chúc mừng 8/3 🎉</div>
     </div>
 </body>
 </html>
