@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chúc mừng 8/3</title>
     <link rel="shortcut icon" href="./rose.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <script>
-        document.documentElement.className = "js";
-        var supportsCssVars = function supportsCssVars() {
-            var e,
-                t = document.createElement("style");
-            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), 
-                   e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), 
-                   t.parentNode.removeChild(t), e;
-        };
-        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-    </script>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #000;
-            color: #caa472;
+            background-color: black;
+            color: #e0a96d;
         }
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 10px;
-            max-width: 900px;
+            grid-gap: 10px;
+            max-width: 90vw;
             margin: auto;
             padding: 20px;
         }
         .grid__item {
             width: 100%;
-            height: 200px;
+            padding-top: 100%; /* Tạo hình vuông */
             background-size: cover;
             background-position: center;
             border-radius: 10px;
         }
         .content__title {
+            margin-top: 20px;
             font-size: 28px;
             font-weight: bold;
-            margin-top: 20px;
         }
         .content__title-sub {
             font-size: 20px;
             line-height: 1.5;
+            margin-top: 10px;
             max-width: 600px;
-            margin: auto;
-            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <main>
+        <h2 class="content__title">International Women's Day</h2>
+        <h2 class="content__title-sub">
+            Chúc Đặng Kim Ngân 8/3 luôn xinh tươi, công việc thuận lợi và quan trọng nhất là <br>
+            thấy dạo này có vẻ thích tiền nên chúc ví lúc nào cũng đầy tiền, vàng đầy két, <br>
+            thẻ nhiều money nhé.
+        </h2>
         <div class="grid">
             <div class="grid__item" style="background-image:url(./img/img1.png);"></div>
             <div class="grid__item" style="background-image:url(./img/img2.jpg);"></div>
@@ -68,14 +63,10 @@
             <div class="grid__item" style="background-image:url(./img/img8.jpg);"></div>
             <div class="grid__item" style="background-image:url(./img/img9.jpg);"></div>
         </div>
-        <h2 class="content__title">International Women's Day</h2>
-        <h2 class="content__title-sub">
-            Chúc Đặng Kim Ngân 8/3 luôn xinh tươi,<br>
-            công việc thuận lợi và quan trọng nhất là<br>
-            thấy dạo này có vẻ thích tiền nên chúc<br>
-            ví lúc nào cũng đầy tiền, vàng đầy két,<br>
-            thẻ nhiều money nhé.
-        </h2>
     </main>
-</body>
+    <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+		</svg>
+		<script src="./script.js"></script>
+	</body>
 </html>
