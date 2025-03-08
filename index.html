@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women's Day</title>
+    <title>Chúc Mừng 8/3</title>
     <style>
         body {
             background-color: black;
@@ -11,27 +11,19 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        .content__title {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .content__title-sub {
-            font-size: 20px;
-            line-height: 1.5;
-            max-width: 600px;
+        .container {
+            width: 80%;
             margin: auto;
         }
-        .grid-container {
+        .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            max-width: 900px;
-            margin: 20px auto;
+            grid-gap: 10px;
+            margin-top: 20px;
         }
         .grid__item {
             width: 100%;
-            padding-top: 100%; /* tạo tỷ lệ vuông cho ảnh */
+            padding-top: 100%; /* Tạo khung hình vuông */
             background-size: cover;
             background-position: center;
             border-radius: 10px;
@@ -39,20 +31,23 @@
     </style>
 </head>
 <body>
-    <h2 class="content__title">International Women's Day</h2>
-    <h2 class="content__title content__title-sub">
-        Chúc Đặng Kim Ngân 8/3 luôn xinh tươi, công việc thuận lợi và quan trọng nhất là thấy dạo này có vẻ thích tiền nên chúc ví lúc nào cũng đầy tiền, vàng đầy két, thẻ nhiều money nhé.
-    </h2>
-    <div class="grid-container">
-        <div class="grid__item" style="background-image:url('./img/img1.png');"></div>
-        <div class="grid__item" style="background-image:url('./img/img2.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img3.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img4.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img5.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img6.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img7.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img8.jpg');"></div>
-        <div class="grid__item" style="background-image:url('./img/img9.jpg');"></div>
+    <div class="container">
+        <h2>Chúc Đặng Kim Ngân 8/3 luôn xinh tươi,<br>
+            công việc thuận lợi và quan trọng nhất là<br>
+            thấy dạo này có vẻ thích tiền nên chúc<br>
+            ví lúc nào cũng đầy tiền, vàng đầy két,<br>
+            thẻ nhiều money nhé.</h2>
+        <div class="grid">
+            <div class="grid__item" style="background-image:url(./img/img1.png);"></div>
+            <div class="grid__item" style="background-image:url(./img/img2.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img3.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img4.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img5.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img6.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img7.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img8.jpg);"></div>
+            <div class="grid__item" style="background-image:url(./img/img9.jpg);"></div>
+        </div>
     </div>
 </body>
 </html>
