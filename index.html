@@ -26,17 +26,23 @@
 			.content__title {
 				text-align: center;
 				margin-bottom: 10px;
+				font-size: 28px;
+				font-weight: bold;
+				color: #ff4081; /* Màu hồng nổi bật */
 			}
 
 			.content__title-sub {
 				display: block;
-				line-height: 1.6;
-				margin-top: 15px;
+				line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+				margin-top: 20px; /* Khoảng cách với tiêu đề */
 				text-align: center;
-				font-size: 20px;
+				font-size: 22px;
+				font-weight: bold;
+				color: #d63384; /* Màu chữ nổi bật */
 				max-width: 80%;
 				margin-left: auto;
 				margin-right: auto;
+				white-space: pre-line; /* Giữ đúng khoảng cách giữa các dòng */
 			}
 		</style>
 	</head>
@@ -57,12 +63,17 @@
 					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
 					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
 				</div>
-				<h2 class="content__title no-select">
-					<span>International Women's day</span>
-				</h2>
-				<h2 class="content__title no-select content__title-sub">
-					Chúc Dang Kim Ngan 8/3 luôn xinh tươi, công việc thuận lợi và quan trọng nhất là thấy dạo này có vẻ thích tiền nên chúc ví lúc nào cũng đầy tiền, vàng đầy két, thẻ nhiều money nhé.
-				</h2>
+
+				<h2 class="content__title no-select">International Women's Day</h2>
+
+				<p class="content__title-sub">
+					Chúc Dang Kim Ngan 8/3 luôn xinh tươi, <br>
+					công việc thuận lợi và quan trọng nhất là <br>
+					thấy dạo này có vẻ thích tiền nên chúc <br>
+					ví lúc nào cũng đầy tiền, vàng đầy két, <br>
+					thẻ nhiều money nhé.
+				</p>
+
 			</div>
 		</main>
 		<svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
@@ -71,3 +82,4 @@
 		<script src="./script.js"></script>
 	</body>
 </html>
+
