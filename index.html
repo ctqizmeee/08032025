@@ -7,24 +7,46 @@
 		<link rel="shortcut icon" href="./rose.png">
 		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script>document.documentElement.className = "js";
+		<script>
+			document.documentElement.className = "js";
+			var supportsCssVars = function supportsCssVars() {
+				var e,
+					t = document.createElement("style");
+				return (
+					(t.innerHTML = "root: { --tmp-var: bold; }"),
+					document.head.appendChild(t),
+					(e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"))),
+					t.parentNode.removeChild(t),
+					e
+				);
+			};
+			supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+		</script>
+		<style>
+			.content__title {
+				text-align: center;
+				margin-bottom: 10px;
+			}
 
-var supportsCssVars = function supportsCssVars() {
-  var e,
-      t = document.createElement("style");
-  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-};
-
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+			.content__title-sub {
+				display: block;
+				line-height: 1.6;
+				margin-top: 15px;
+				text-align: center;
+				font-size: 20px;
+				max-width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
 	</head>
 	<body class="demo-1 loading">
 		<main>
 			<div class="message">Please view this demo on a desktop to see the effect.</div>
-			<div class="frame">
-			</div>
+			<div class="frame"></div>
 			<div class="content">
 				<div class="grid">
-					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
+					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover"></div></div>
 					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div></div>
 					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div></div>
 					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div></div>
@@ -34,7 +56,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
 					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
 					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
-			</div>
+				</div>
 				<h2 class="content__title no-select">
 					<span>International Women's day</span>
 				</h2>
